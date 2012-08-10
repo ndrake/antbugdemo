@@ -1,7 +1,7 @@
 antbugdemo
 ==========
 
-Example repo to demonstrate issue with wcversion and files with @ in the names.
+Example repo to demonstrate issue with wcversion and files with @ in the names on Linux.
 
 Check out using SVN:
 
