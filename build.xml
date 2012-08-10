@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="firstinsight" default="test-wcversion" basedir=".">
+
+    <property name="lib.ant" value="${basedir}/lib/ant" />
+
+    <taskdef resource="org/tigris/subversion/svnant/svnantlib.xml">
+        <classpath>
+            <fileset dir="${lib.ant}">
+                <include name="svn*.jar"/>
+            </fileset>
+        </classpath>
+    </taskdef>
+
+    <target name="test-wcversion">
+        <svn svnkit="false" javahl="true" failonerror="false">
+            <wcVersion path="${basedir}" />
+        </svn>                 
+        <echo>Max Revision: ${revision.max}</echo>
+    </target>
+
+</project>
